@@ -1,0 +1,7 @@
+#!/bin/bash
+set -e
+
+# Stop any running instances
+pkill -f msi-center-gui 2>/dev/null || true
+
+exit 0

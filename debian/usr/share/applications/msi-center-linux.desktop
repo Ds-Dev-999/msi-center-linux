@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=MSI Center Linux
+Comment=Control MSI laptop fans and user scenarios
+GenericName=MSI Laptop Control Center
+Exec=pkexec /usr/bin/msi-center-gui
+Icon=msi-center-linux
+Terminal=false
+Type=Application
+Categories=System;Settings;HardwareSettings;
+Keywords=msi;fan;cooling;performance;laptop;
+StartupNotify=true
+StartupWMClass=msi-center-linux

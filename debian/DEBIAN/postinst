@@ -1,0 +1,29 @@
+#!/bin/bash
+set -e
+
+# Load ec_sys module for EC access
+modprobe ec_sys write_support=1 2>/dev/null || true
+
+# Add module to load on boot
+if ! grep -q "ec_sys" /etc/modules 2>/dev/null; then
+    echo "ec_sys" >> /etc/modules 2>/dev/null || true
+fi
+
+# Create module options
+mkdir -p /etc/modprobe.d
+echo "options ec_sys write_support=1" > /etc/modprobe.d/msi-center-linux.conf 2>/dev/null || true
+
+# Update icon cache
+if command -v gtk-update-icon-cache &> /dev/null; then
+    gtk-update-icon-cache -f /usr/share/icons/hicolor 2>/dev/null || true
+fi
+
+# Update desktop database
+if command -v update-desktop-database &> /dev/null; then
+    update-desktop-database /usr/share/applications 2>/dev/null || true
+fi
+
+echo "MSI Center Linux installed successfully!"
+echo "Launch from Applications menu or run: msi-center-gui"
+
+exit 0

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e94560"/>
+      <stop offset="100%" style="stop-color:#ff6b6b"/>
+    </linearGradient>
+    <linearGradient id="fan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4facfe"/>
+      <stop offset="100%" style="stop-color:#00f2fe"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="128" height="128" rx="24" fill="url(#bg)"/>
+  
+  <!-- Outer glow ring -->
+  <circle cx="64" cy="64" r="48" fill="none" stroke="url(#accent)" stroke-width="3" opacity="0.6"/>
+  
+  <!-- Fan blades -->
+  <g transform="translate(64,64)">
+    <!-- Blade 1 -->
+    <path d="M0,-8 Q15,-35 0,-42 Q-15,-35 0,-8" fill="url(#fan)" transform="rotate(0)"/>
+    <!-- Blade 2 -->
+    <path d="M0,-8 Q15,-35 0,-42 Q-15,-35 0,-8" fill="url(#fan)" transform="rotate(72)"/>
+    <!-- Blade 3 -->
+    <path d="M0,-8 Q15,-35 0,-42 Q-15,-35 0,-8" fill="url(#fan)" transform="rotate(144)"/>
+    <!-- Blade 4 -->
+    <path d="M0,-8 Q15,-35 0,-42 Q-15,-35 0,-8" fill="url(#fan)" transform="rotate(216)"/>
+    <!-- Blade 5 -->
+    <path d="M0,-8 Q15,-35 0,-42 Q-15,-35 0,-8" fill="url(#fan)" transform="rotate(288)"/>
+    
+    <!-- Center hub -->
+    <circle cx="0" cy="0" r="12" fill="#1a1a2e" stroke="url(#fan)" stroke-width="2"/>
+    <circle cx="0" cy="0" r="6" fill="url(#accent)"/>
+  </g>
+  
+  <!-- MSI text -->
+  <text x="64" y="108" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="16" font-weight="bold" fill="white">MSI</text>
+</svg>
