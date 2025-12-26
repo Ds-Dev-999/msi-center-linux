@@ -11,6 +11,12 @@ A powerful MSI laptop control center for Linux - Fan control, user scenarios, an
 
 **Developed by Dasun Sanching**
 
+<p align="center">
+  <a href="https://buymeacoffee.com/DsDev999">
+    <img src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Support%20Development-orange?style=for-the-badge&logo=buy-me-a-coffee" alt="Buy Me A Coffee">
+  </a>
+</p>
+
 ---
 
 ## 📥 Download
@@ -255,6 +261,16 @@ Contributions welcome! Please test on your specific MSI laptop model and report 
 
 - Built with ❤️ using Rust & egui
 - For MSI laptop users on Linux
+
+## ☕ Support Development
+
+If this project helped you, consider buying me a coffee!
+
+<p align="center">
+  <a href="https://buymeacoffee.com/DsDev999">
+    <img src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Support%20Development-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee">
+  </a>
+</p>
 
 ---
 
