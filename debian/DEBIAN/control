@@ -1,0 +1,15 @@
+Package: msi-center-linux
+Version: 1.0.0
+Section: utils
+Priority: optional
+Architecture: amd64
+Maintainer: Dasun Sanching <dasun@localhost>
+Description: MSI Center clone for Linux
+ A powerful MSI laptop control center for Linux.
+ Features include fan control, user scenarios (Silent, Balanced,
+ High Performance, Turbo, Super Battery), custom profiles,
+ and real-time system monitoring.
+ .
+ Developed by Dasun Sanching.
+Depends: libc6
+Homepage: https://github.com/dasun/msi-center-linux
